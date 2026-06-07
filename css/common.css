@@ -8,7 +8,8 @@ body {
 }
 
 .container {
-    max-width: 352px;
+    box-sizing: content-box;
+    max-width: 320px;
     padding-left: 16px;
     padding-right: 16px;
     margin-left: auto;
@@ -57,13 +58,13 @@ img {
 
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 800px;
+        max-width: 768px;
     }
 }
 
 @media screen and (min-width: 1158px) {
     .container {
-        max-width: 1188px;
+        max-width: 1158px;
         padding-left: 15px;
         padding-right: 15px;
     }
