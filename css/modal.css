@@ -198,9 +198,13 @@
     justify-content: center;
 }
 
-.checkbox-input:checked+.form-checkbox>.custom-checkbox {
+.checkbox-input:checked+.checkbox-label .custom-checkbox {
     background-color: #404BBF;
     border: none;
+}
+
+.checkbox-input:checked+.checkbox-label .check-icon {
+    opacity: 1;
 }
 
 .custom-checkbox {
@@ -219,10 +223,6 @@
 .check-icon {
     fill: #F4F4FD;
     opacity: 0;
-}
-
-.checkbox-input:checked+.form-checkbox .check-icon {
-    opacity: 1;
 }
 
 @media screen and (min-width: 320px) {
