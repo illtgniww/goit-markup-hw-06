@@ -107,7 +107,9 @@
 .header .address a {
     color: #434455;
     font-style: normal;
-    font-size: 16px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
 
     display: block;
     padding-top: 24px;
