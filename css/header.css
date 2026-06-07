@@ -14,10 +14,16 @@
 .header-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .header-nav {
+    display: none;
     margin-right: auto;
+}
+
+.address {
+    display: none;
 }
 
 .header-nav-list {
@@ -45,11 +51,21 @@
     line-height: 1.3;
     text-transform: uppercase;
     letter-spacing: 0.03em;
-    margin-right: 76px;
 
     display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.menu-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    fill: #2E2F42;
 }
 
 .header-logo-accent {
@@ -121,33 +137,16 @@
     left: 0;
 }
 
-@media screen and (min-width: 320px) {
-    .header-container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .header-nav,
-    .address {
-        display: none;
-    }
-
-    .menu-toggle {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: transparent;
-        border: none;
-        padding: 0;
-        cursor: pointer;
-        fill: #2E2F42;
-    }
-}
 
 @media screen and (min-width: 768px) {
     .menu-toggle {
         display: none;
+    }
+
+    .header-logo {
+        margin-right: 120px;
+        padding-top: 24px;
+        padding-bottom: 24px;
     }
 
     .header-nav {
@@ -178,6 +177,10 @@
 }
 
 @media screen and (min-width: 1158px) {
+    .header-logo {
+        margin-right: 76px;
+    }
+
     .header-address {
         flex-direction: row;
         align-items: center;

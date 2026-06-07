@@ -1,34 +1,33 @@
 .footer {
     background-color: #2E2F42;
-    padding: 100px 0px;
+    padding: 96px 0;
 }
 
 .footer-container {}
 
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
+}
 
-.footer-logo,
-.footer-text {
-    display: block;
-    max-width: 264px;
+.footer-logo-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer-logo {
+    display: inline-block;
     margin-bottom: 16px;
-}
-
-.footer-text {
-    color: #F4F4FD;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.02em;
 }
 
 .footer-logo-accent {
     color: #4D5AE5;
     font-weight: 700;
     font-size: 18px;
-    line-height: 133%;
+    line-height: 1.33;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
@@ -37,29 +36,28 @@
     color: #F4F4FD;
     font-weight: 700;
     font-size: 18px;
-    line-height: 133%;
+    line-height: 1.33;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 
-.footer-info {
-    display: flex;
-}
-
-.footer-logo-text {
-    margin-right: 120px;
+.footer-text {
+    color: #F4F4FD;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    max-width: 264px;
 }
 
 .footer-socials {
-    width: 208px;
-    margin-right: 83px;
-    margin-bottom: 32px;
+    text-align: center;
 }
 
 .footer-socials-text {
     font-weight: 500;
     font-size: 16px;
-    line-height: 150%;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     color: #fff;
     margin-bottom: 16px;
@@ -68,6 +66,7 @@
 .footer-social-list {
     display: flex;
     gap: 16px;
+    justify-content: center;
 }
 
 .footer-social-item {
@@ -86,24 +85,28 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-social-icon {
-    fill: #F4F4FD;
-}
-
 .footer-social-link:hover,
 .footer-social-link:focus {
     background-color: #31D0AA;
 }
 
+.footer-social-icon {
+    fill: #F4F4FD;
+}
+
 .footer-ad {
-    /* width: 453px; */
-    margin-bottom: 32px;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-form {
+    width: 100%;
 }
 
 .footer-ad-title {
     font-weight: 500;
     font-size: 16px;
-    line-height: 150%;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     color: #fff;
     margin-bottom: 16px;
@@ -111,29 +114,38 @@
 
 .footer-ad-list {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    gap: 16px;
+    width: 100%;
+}
+
+.footer-ad-list li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .footer-input-email {
     border-radius: 4px;
     padding: 8px 16px;
-    width: 264px;
+    width: 100%;
+    max-width: 100%;
     height: 40px;
-    background-color: #2E2F42;
-    border-style: none;
+    background-color: transparent;
     border: 1px solid #fff;
     color: #fff;
-    margin-right: 24px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-weight: 400;
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .footer-input-email::placeholder {
     color: #fff;
+    opacity: 0.6;
 }
 
 .footer-input-email:focus {
@@ -151,9 +163,10 @@
     border-radius: 4px;
     padding: 8px 24px;
     min-width: 165px;
+    height: 40px;
     font-weight: 500;
     font-size: 16px;
-    line-height: 150%;
+    line-height: 1.5;
     letter-spacing: 0.04em;
     border: none;
     cursor: pointer;
@@ -163,82 +176,10 @@
 .subscribe-btn:hover,
 .subscribe-btn:focus {
     background-color: #31D0AA;
-
 }
 
 .footer-btn-icon {
     fill: #fff;
-    border-style: none;
-}
-
-@media screen and (min-width: 320px) {
-    .footer-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 72px;
-    }
-
-    .footer-ad-list {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footer-logo-text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-right: 0;
-    }
-
-    .footer-logo {
-        display: inline-block;
-        margin-bottom: 16px;
-    }
-
-    .footer-logo,
-    .footer-text {
-        display: block;
-        max-width: 264px;
-        text-align: center;
-    }
-
-    .footer-text {
-        text-align: left;
-    }
-
-    .footer-socials {
-        text-align: center;
-        margin-right: 0;
-    }
-
-    .footer-socials-text {
-        font-weight: 500;
-        margin-bottom: 16px;
-        text-align: center;
-    }
-
-    .footer-ad {
-        text-align: center;
-    }
-
-    .footer-ad-title {
-        margin-bottom: 16px;
-        text-align: center;
-    }
-
-    .footer-ad-list {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 16px;
-    }
-
-    .footer-input-email {
-        margin-right: 0;
-        width: 100%;
-    }
 }
 
 @media screen and (min-width: 768px) {
@@ -252,9 +193,7 @@
     }
 
     .footer-logo-text {
-        text-align: left;
         align-items: flex-start;
-        max-width: 264px;
     }
 
     .footer-logo,
@@ -266,16 +205,30 @@
 
     .footer-socials {
         text-align: left;
-        margin: 0;
+    }
+
+    .footer-social-list {
+        justify-content: flex-start;
     }
 
     .footer-ad {
+        width: auto;
         text-align: left;
+    }
+
+    .footer-form {
+        width: auto;
     }
 
     .footer-ad-list {
         flex-direction: row;
         gap: 24px;
+        width: auto;
+    }
+
+    .footer-ad-list li {
+        width: auto;
+        display: block;
     }
 
     .footer-input-email {
@@ -284,9 +237,12 @@
 }
 
 @media screen and (min-width: 1158px) {
+    .footer {
+        padding: 100px 0;
+    }
+
     .footer-info {
         flex-wrap: nowrap;
-        align-items: baseline;
         gap: 0;
         padding-left: 0;
     }
@@ -296,6 +252,10 @@
     }
 
     .footer-socials {
-        margin-right: 80px;
+        margin-right: 0;
+    }
+
+    .footer-ad {
+        margin-left: auto;
     }
 }
